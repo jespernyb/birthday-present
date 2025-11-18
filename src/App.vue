@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { vConfetti } from '@neoconfetti/vue'
-import { Image } from 'primevue'
+import n1 from './pictures/nr1.jpeg'
+import n2 from './pictures/IMG_6786.webp'
+import n3 from './pictures/IMG_6789.jpg'
+import n4 from './pictures/1DDD7638-2C4F-45DD-94A3-77A7BDAE36A1_1_105_c.jpeg'
+import n5 from './pictures/21A37D9C-881C-437E-8CD6-424E5B980FED_1_105_c.jpeg'
+import oliv from './pictures/oliv.png'
+import dryckmm from './pictures/dryckmm.png'
+import temple from './pictures/temple.png'
 </script>
 
 <template>
@@ -18,11 +25,7 @@ import { Image } from 'primevue'
       <div
         class="flex flex-col border border-surface shadow-lg justify-center items-center rounded-2xl"
       >
-        <Image
-          src="src/pictures/8C4F339B-48CD-40C1-ABF7-557FC2E4B419_1_105_c.jpeg"
-          alt="Image"
-          imageClass="rounded-2xl"
-        />
+        <Image :src="n1" alt="Image" imageClass="rounded-2xl" />
       </div>
     </div>
     <div class="h-[30rem]"></div>
@@ -44,7 +47,7 @@ import { Image } from 'primevue'
           }"
           class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-130 rounded-2xl gap-4"
         >
-          <Image src="src/pictures/IMG_6786.webp" alt="Image" imageClass="rounded-2xl" />
+          <Image :src="n2" alt="Image" imageClass="rounded-2xl" />
         </div>
       </div>
     </section>
@@ -67,7 +70,7 @@ import { Image } from 'primevue'
           }"
           class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl gap-4"
         >
-          <Image src="src/pictures/IMG_6789.jpg" alt="Image" imageClass="rounded-2xl" />
+          <Image :src="n3" alt="Image" imageClass="rounded-2xl" />
         </div>
       </div>
       <div class="flex flex-col justify-center items-center">
@@ -78,7 +81,7 @@ import { Image } from 'primevue'
           class="flex flex-col justify-center items-center max-w-100 gap-4"
         >
           <Image
-            src="src/pictures/1DDD7638-2C4F-45DD-94A3-77A7BDAE36A1_1_105_c.jpeg"
+            :src="n4"
             alt="Image"
             imageClass="rounded-2xl"
           />
@@ -110,7 +113,7 @@ import { Image } from 'primevue'
           class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl gap-4"
         >
           <Image
-            src="src/pictures/21A37D9C-881C-437E-8CD6-424E5B980FED_1_105_c.jpeg"
+            :src="n5"
             alt="Image"
             imageClass="rounded-2xl"
           />
@@ -127,7 +130,7 @@ import { Image } from 'primevue'
         }"
         class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
       >
-        <Image src="src/pictures/oliv.png"></Image>
+        <Image :src="oliv"></Image>
       </div>
       <div
         v-animateonscroll="{
@@ -146,9 +149,9 @@ import { Image } from 'primevue'
         }"
         class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
       >
-        <Image src="src/pictures/dryckmm.png"></Image>
+        <Image :src="dryckmm"></Image>
       </div>
-            <div
+      <div
         v-animateonscroll="{
           enterClass: 'animate-enter slide-in-from-b-50 animate-duration-1000',
           leaveClass: 'animate-leave fade-out-0',
@@ -164,19 +167,22 @@ import { Image } from 'primevue'
         }"
         class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
       >
-        <Image src="src/pictures/temple.png"></Image>
+        <Image :src="temple"></Image>
       </div>
     </div>
 
     <div class="h-[30rem]"></div>
     <div class="flex flex-col justify-center gap-8 p-40">
-      <h3 class = " text-center text-3xl font-mono max-w-100 pb-60">Dags att gissa!</h3>
+      <h3 class="text-center text-3xl font-mono max-w-100 pb-60">Dags att gissa!</h3>
 
-      <div v-animateonscroll="{
-          enterClass: 'animate-enter fade-in-10 spin-in-90 slide-in-from-l-30 animate-duration-1000',
+      <div
+        v-animateonscroll="{
+          enterClass:
+            'animate-enter fade-in-10 spin-in-90 slide-in-from-l-30 animate-duration-1000',
           leaveClass: 'animate-leave fade-out-0',
         }"
-        class="flex flex-col border-primary shadow-lg justify-center items-center w-100 rounded-2xl p-10" >
+        class="flex flex-col border-primary shadow-lg justify-center items-center w-100 rounded-2xl p-10"
+      >
         <!--TODO lägg till knapp eller input för att gissa-->
       </div>
     </div>
