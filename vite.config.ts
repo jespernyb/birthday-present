@@ -9,11 +9,16 @@ import {PrimeVueResolver} from '@primevue/auto-import-resolver';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueDevTools(), tailwindcss({ config: './src/tailwind.config.js' }),     Components({
+  plugins: [
+    vue(),
+    vueDevTools(),
+    tailwindcss(),
+    Components({
       resolvers: [
         PrimeVueResolver()
       ]
-    })],
+    })
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
