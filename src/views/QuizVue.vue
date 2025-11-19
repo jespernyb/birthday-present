@@ -47,7 +47,7 @@ async function handleSend() {
   <div class="max-w-screen max-h-180">
     <div class="flex justify-center items-center overflow-y-auto h-[400px]">
       <div v-if="isLoading">
-        <span class="text-center text-[3vw] font-mono" class_name="animate-pulse">...</span>
+        <span class="text-center text-[3vw] font-mono animate-ping">...</span>
       </div>
       <div v-else-if="!isLoading">
         <span class="text-center text-[3vw] font-mono"> {{ messages.text }}</span>

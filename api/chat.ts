@@ -46,7 +46,6 @@ export default async function handler(request: VercelRequest, response: VercelRe
     const aiResponse = result.response
     //console.log('AI Response Text:', aiResponse.text())
 
-
     let responseText = aiResponse.text()
     const jsonMatch = responseText.match(/```json\n([\s\S]*)\n```/)
     if (jsonMatch && jsonMatch[1]) {
