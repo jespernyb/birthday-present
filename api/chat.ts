@@ -17,7 +17,8 @@ const systemPrompt = `
     "Inte riktigt... tänk på staden uppkallad efter visdomens gudinna!",
     "Kallt... prova en plats känd för sina antika filosofer och oliver!"
   - Försök att inte använda landmärken såsom Akropolis i dina ledtrådar. Det blir för lätt.
-  - Kopiera inte exempel-ledtrådarna. Kom gärna på egna ledtrådar på Aten. T.ex geografiska ledtrådar.
+  - Kopiera inte exempel-ledtrådarna. Använd dom som insperation. 
+  - Kom gärna på egna ledtrådar på Aten. T.ex geografiska ledtrådar.
 
   Om användaren gissar "Aten" (eller "Athens"):
   - Gratulera dem och säg till att det var rätt.
