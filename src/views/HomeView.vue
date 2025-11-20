@@ -54,7 +54,7 @@ import QuizVue from './QuizVue.vue'
     </section>
 
     <div class="h-120"></div>
-    <div class="grid grid-cols-3 justify-center gap-8 max-h-screen max-w-screen pr-5 pl-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-8 max-h-screen max-w-screen pr-5 pl-5">
       <div class="flex flex-col justify-center items-center">
         <h2
           v-animateonscroll="{
@@ -113,7 +113,7 @@ import QuizVue from './QuizVue.vue'
         </div>
       </div>
     </div>
-    <div class="h-120"></div>
+    <div class="md:h-120 h-260"></div>
 
     <div class="flex flex-wrap justify-center gap-8">
       <div
