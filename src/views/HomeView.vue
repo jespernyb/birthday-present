@@ -74,7 +74,7 @@ import QuizVue from './QuizVue.vue'
           <Image :src="n3" alt="Image" imageClass="rounded-2xl" />
         </div>
       </div>
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col-reverse md:flex-col justify-center items-center">
         <div
           v-animateonscroll="{
             enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000',
@@ -88,7 +88,7 @@ import QuizVue from './QuizVue.vue'
             enterClass: 'animate-enter fade-in-20 slide-in-from-r-20 animate-duration-1000',
             leaveClass: 'animate-leave fade-out-0',
           }"
-          class="flex text-center text-3xl font-mono max-w-80 pt-4"
+          class="flex text-center text-3xl font-mono max-w-80 p-4"
         >
           Bad finnes
         </h2>
@@ -115,7 +115,7 @@ import QuizVue from './QuizVue.vue'
     </div>
     <div class="md:h-120 h-260"></div>
 
-    <div class="flex flex-wrap justify-center gap-8">
+    <div class="flex flex-col md:flex-row justify-center gap-8">
       <div
         v-animateonscroll="{
           enterClass:
@@ -130,9 +130,9 @@ import QuizVue from './QuizVue.vue'
           enterClass: 'animate-enter fade-in-10 slide-in-from-b-50 animate-duration-1000',
           leaveClass: 'animate-leave fade-out-0',
         }"
-        class="flex flex-col justify-center"
+        class="flex flex-col justify-center items-center"
       >
-        <i class="bg-primary shadow-lg rounded-md p-2 pi pi-plus"></i>
+        <i class="bg-primary shadow-lg w-8 h-8 rounded-md p-2 pi pi-plus"></i>
       </div>
 
       <div
@@ -146,12 +146,12 @@ import QuizVue from './QuizVue.vue'
       </div>
       <div
         v-animateonscroll="{
-          enterClass: 'animate-enter slide-in-from-b-50 animate-duration-1000',
+          enterClass: 'animate-enter fade-in-10 slide-in-from-b-50 animate-duration-1000',
           leaveClass: 'animate-leave fade-out-0',
         }"
-        class="flex flex-col justify-center"
+        class="flex flex-col justify-center items-center"
       >
-        <i class="bg-primary shadow-lg rounded-md p-2 pi pi-plus"></i>
+        <i class="bg-primary shadow-lg w-8 h-8 rounded-md p-2 pi pi-plus"></i>
       </div>
       <div
         v-animateonscroll="{
